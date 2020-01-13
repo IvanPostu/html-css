@@ -1,0 +1,41 @@
+body,
+html {
+    background-color: rgb(32, 32, 44);
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.top{
+    background-color: #fff;
+    width: 100h;
+    max-width: 960px;
+    min-width: 460px;
+    min-height: 100px;
+    margin: 0 auto 40px;
+    border: 1px solid orange;
+}
+
+.grid{
+    width: 100%;
+    max-width: 960px;
+    min-width: 460px;
+    margin: 0 auto;
+    padding: 0 30px;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    border: 1px solid orange;
+}
+
+.grid-item{
+    background: rgb(255, 255, 255);
+    min-height: 200px;
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+    margin: 0 10px 20px;
+    flex: 1 1 calc(33.33% - 20px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
