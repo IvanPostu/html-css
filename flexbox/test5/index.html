@@ -9,7 +9,7 @@
   <title>Flexbox</title>
 </head>
 
-<body>
+<body onload="bodyLoad()">
   <div class="header">
     <div class="header__section">
       <div class="header__item headerlogo">
@@ -61,23 +61,50 @@
   <main>
     <div class="sideBar">
       <div class="sideBar__section">
-        <a href=""><div class="sideBar__item">My page</div></a>
-        <a href=""><div class="sideBar__item">Friends</div></a>
-        <a href=""><div class="sideBar__item">The answers</div></a>
-        <a href=""><div class="sideBar__item">Groups</div></a>
-        <a href=""><div class="sideBar__item">Images</div></a>
-        <a href=""><div class="sideBar__item">Music</div></a>
-        <a href=""><div class="sideBar__item">Games</div></a>
-
+        <a href="">
+          <div class="sideBar__item">My page</div>
+        </a>
+        <a href="">
+          <div class="sideBar__item">Friends</div>
+        </a>
+        <a href="">
+          <div class="sideBar__item">The answers</div>
+        </a>
+        <a href="">
+          <div class="sideBar__item">Groups</div>
+        </a>
+        <a href="">
+          <div class="sideBar__item">Images</div>
+        </a>
+        <a href="">
+          <div class="sideBar__item">Music</div>
+        </a>
+        <a href="">
+          <div class="sideBar__item">Games</div>
+        </a>
       </div>
-
       <div class="sideBar__section">
         <div class="sideBar__item"><a href="">QQQ1</a></div>
         <div class="sideBar__item"><a href="">WWW2</a></div>
       </div>
-
     </div>
 
+    <div class="wrap">
+      <h1>Image slider</h1>
+      <div class="slider">
+        <button class="sliderBtn" id="sliderPrev">&laquo;</button>
+        <div class="scroller">
+          <ul class="items" id="sliderItems">
+            <li class="item" style="background-image: url(./q1.jpg)"></li>
+            <li class="item" style="background-image: url(./q2.jpg)"></li>
+            <li class="item" style="background-image: url(./q3.jpg)"></li>
+            <li class="item" style="background-image: url(./q4.jpg)"></li>
+            <li class="item" style="background-image: url(./q5.jpg)"></li>
+          </ul>
+        </div>
+        <button class="sliderBtn" id="sliderNext">&raquo;</button>
+      </div>
+    </div>
 
 
   </main>
@@ -85,3 +112,47 @@
 </body>
 
 </html>
+
+
+
+<script>
+
+  function moveImg(prev){
+    const sliderUl = document.getElementById('sliderItems')
+    const listItems = sliderUl.getElementsByTagName('li')
+    const arr = Array.prototype.slice.call( listItems )
+    const strArr = arr.map(a=>a.outerHTML)
+
+    if(prev){
+    /*Remove the item from the head and place it on the tail.*/
+      const current = strArr.shift()
+      strArr.push(current)
+    }else{
+    /*Remove the item from the tail and place it on the head.*/
+      const current = strArr.pop()
+      strArr.unshift(current)
+    }
+    const strNode = strArr.reduce((curr, item)=>`${curr} ${item}`, '')
+    sliderUl.innerHTML = strNode
+  }
+
+  function prevBtnClick(){
+    moveImg(true)
+
+  }
+
+  function nextBtnClick(){
+    moveImg(false)
+  }
+
+  function bodyLoad(){
+    const prevBtn = document.getElementById("sliderPrev")
+    const nextBtn = document.getElementById("sliderNext")
+
+    prevBtn.addEventListener('click', prevBtnClick)
+    nextBtn.addEventListener('click', nextBtnClick)
+
+  }
+
+
+</script>
