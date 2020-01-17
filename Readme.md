@@ -59,6 +59,16 @@
 
 ----
 
+## Loading
+
+- Loading template 1
+
+![loadingtemplate1](./readmeImages/loadingT1.jpg "")
+
+
+
+----
+
 ## Other
 
 - 404 Error template 1
