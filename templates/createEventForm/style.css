@@ -25,12 +25,14 @@ main {
     margin: 0;
     padding: 0;
 }
+button, label{
+    font: 400 13.3333px Arial;
+}
 
 .createEventContainer {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 120vh;
     color: black;
 
 }
@@ -107,11 +109,16 @@ main {
     border-radius: .25em;
     border: 0;
     transition: .3s;
-    cursor: pointer;
 }
 
 .submitBtn:hover {
+    cursor: pointer;
     color: #fff;
+}
+
+.submitBtn:disabled {
+    background: rgba(0, 219, 146, 0.212);
+    color: rgba(255, 0, 0, 0.445);
 }
 
 .errorMsg {
@@ -121,29 +128,34 @@ main {
     list-style-type: none;
 }
 
-
-
-
-
-.eventCategoryBtn{
-    height: 45px;
-    width: 100%;
+.boxForImg{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(226, 226, 226);
+    left: 50%;
+    position: relative;
+    transform: translate(-50%, 0);
+    margin: 5px 0 0 0 ;
 }
 
 
-/* .dDownBtn {
-    background-color: #4CAF50;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
+
+.eventCategoryBtn, 
+.loadImage{
+    width: 100%;
+    border: 1px solid #ccc;
+    text-align: center;
     cursor: pointer;
-} */
+    background-color: rgb(183, 198, 202);
+}
+.eventCategoryBtn{
+    height: 45px;
+}
 
 .dDownContainer {
     position: relative;
     display: inline-block;
-    background-color: royalblue;
+    background-color: rgba(65, 105, 225, 0);
 }
 
 .dDownContent {
@@ -156,6 +168,9 @@ main {
     line-height: 1.5;
     flex-wrap: wrap;
     justify-content: center;
+    height: 300px;
+    overflow-x: hidden;
+
 }
 
 .dDownItem {

@@ -29,6 +29,33 @@
                 <label class="createEventFieldLabelPartial">Address</label>
                 <input class="inputText" type="text" placeholder="ex. St. Studentilor">
             </div>
+            <ul class="errorMsg">
+                <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat voluptatem corrupti doloribus!</li>
+            </ul>
+
+            <div class="createEventField input-right">
+                <label class="createEventFieldLabelPartial">EventDate</label>
+                <input class="inputText" type="date">
+            </div>
+            <ul class="errorMsg">
+                <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat voluptatem corrupti doloribus!</li>
+            </ul>
+
+            <div style="flex-direction: column" class="createEventField input-bottom">
+                <label class="createEventFieldLabelFullWidth">Preview message</label>
+                <textarea rows="7" class="inputText"></textarea>
+            </div>
+            <ul class="errorMsg">
+                <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat voluptatem corrupti doloribus!</li>
+            </ul>
+
+            <div style="flex-direction: column" class="createEventField input-bottom">
+                <label class="createEventFieldLabelFullWidth">Description</label>
+                <textarea rows="11" class="inputText"></textarea>
+            </div>
+            <ul class="errorMsg">
+                <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat voluptatem corrupti doloribus!</li>
+            </ul>
 
             <div style="flex-direction: column" class="createEventField input-right">
                 <div class="dDownContainer">
@@ -55,29 +82,35 @@
                         <li class="dDownItem">
                             Lorem ipsum dolor sit amet consectetur.
                         </li>
+                        <li class="dDownItem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi?</li>
+                        <li class="dDownItem">Quaerat magni esse voluptates rem dolores quasi. Accusamus, obcaecati.
+                        </li>
+                        <li class="dDownItem">Sint adipisci eum quam cum corrupti eveniet quae eius?</li>
+                        <li class="dDownItem">Perferendis alias facilis nesciunt impedit molestias nihil laboriosam
+                            saepe.</li>
+                        <li class="dDownItem">Cupiditate, cum repellat. Unde neque eos deserunt itaque animi.</li>
                     </ul>
                 </div>
             </div>
-
-            <div class="createEventField input-right">
-                <label class="createEventFieldLabelPartial">EventDate</label>
-                <input class="inputText" type="date">
-            </div>
+            <ul class="errorMsg">
+                <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat voluptatem corrupti doloribus!</li>
+            </ul>
 
             <div style="flex-direction: column" class="createEventField input-bottom">
-                <label class="createEventFieldLabelFullWidth">Preview message</label>
-                <textarea rows="7" class="inputText"></textarea>
+                <label class="loadImage" style="padding: 10px 0 10px 0;">
+                    <input type="file" style="display: none" onchange="imageHasBeenLoaded(event)">
+                    Upload image
+                </label>
+                <div class="boxForImg">
+                    <img id="myimage" height="200px" width="200px">
+                </div>
             </div>
-
-            <div style="flex-direction: column" class="createEventField input-bottom">
-                <label class="createEventFieldLabelFullWidth">Description</label>
-                <textarea rows="11" class="inputText"></textarea>
-            </div>
-
-
+            <ul class="errorMsg">
+                <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat voluptatem corrupti doloribus!</li>
+            </ul>
 
             <div class="createEventField input-right">
-                <button class="submitBtn">Create event</button>
+                <button disabled title="Some data is not valid."  class="submitBtn">Create event</button>
             </div>
 
         </div>
@@ -90,6 +123,20 @@
 
 
 <script>
+
+    function imageHasBeenLoaded(event) {
+        var selectedFile = event.target.files[0];
+        var reader = new FileReader();
+
+        var imgtag = document.getElementById("myimage");
+        imgtag.title = selectedFile.name;
+
+        reader.onload = function (event) {
+            imgtag.src = event.target.result;
+        };
+
+        reader.readAsDataURL(selectedFile);
+    }
 
     function bodyLoad() {
 
