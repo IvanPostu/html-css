@@ -1,7 +1,7 @@
 # Simple html-css templates of frequently used elements
 ## Examples of adaptive forms for data entry:
 
-- Flexbox template 1
+- Form template 1
   
 ![fboxtemplate1](./readmeImages/formCreateEvent.jpg "")
 
@@ -54,3 +54,13 @@
 - Dropdown template 1
 
 ![ddowntemplate1](./readmeImages/dropdownT1.jpg "")
+
+
+
+----
+
+## Other
+
+- 404 Error template 1
+
+![error404](./readmeImages/404errorPage.jpg "")
