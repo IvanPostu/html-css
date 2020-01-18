@@ -26,7 +26,8 @@
 ![fboxtemplate4](./readmeImages/flexboxT4.jpg "")
 
 - Flexbox template 5
-  
+    Inspired by: [DarkCode youtube channel](https://www.youtube.com/channel/UCD3KVjbb7aq2OiOffuungzw "DarkCode youtube channel")
+
 ![fboxtemplate5](./readmeImages/flexboxT5.jpg "")
 
 - Flexbox template 6
@@ -42,11 +43,14 @@
 ![fboxtemplate8](./readmeImages/flexboxT8.jpg "")
 
 - Flexbox template 9
-  
+  Inspired by: [Web Developer Blog](https://www.youtube.com/channel/UCe_H8hzx9WV7Ca7Ps5gt72Q "Web Developer Blog youtube channel")
+
+
 ![fboxtemplate9](./readmeImages/flexboxT9.jpg "")
 
 - Flexbox template 10
-  
+  Inspired by: [DarkCode youtube channel](https://www.youtube.com/channel/UCD3KVjbb7aq2OiOffuungzw "DarkCode youtube channel")
+
 ![fboxtemplate10](./readmeImages/flexboxT10.jpg "")
 
 - Flexbox template 11
@@ -80,3 +84,9 @@
 - 404 Error template 1
 
 ![error404](./readmeImages/404errorPage.jpg "")
+
+- Full landing page template 1 
+Inspired by: [DarkCode youtube channel](https://www.youtube.com/channel/UCD3KVjbb7aq2OiOffuungzw "DarkCode youtube channel")
+
+![fullLandingPageT1](./readmeImages/fullLandingPageT1.jpg "")
+
