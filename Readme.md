@@ -30,7 +30,7 @@
 ![fboxtemplate4](./readmeImages/flexboxT4.jpg "")
 
 - Flexbox template 5
-    Inspired by: [DarkCode youtube channel](https://www.youtube.com/channel/UCD3KVjbb7aq2OiOffuungzw "DarkCode youtube channel")
+    <!-- Inspired by: [DarkCode youtube channel](https://www.youtube.com/channel/UCD3KVjbb7aq2OiOffuungzw "DarkCode youtube channel") -->
 
 ![fboxtemplate5](./readmeImages/flexboxT5.jpg "")
 
@@ -70,6 +70,11 @@
 ![ddowntemplate1](./readmeImages/dropdownT1.jpg "")
 
 
+- ResponsiveNavMenuBar
+
+
+![responsiveNavMenuBar](./readmeImages/responsiveNavMenuBar.jpg "")
+
 
 ----
 
@@ -90,7 +95,7 @@
 ![error404](./readmeImages/404errorPage.jpg "")
 
 - Full landing page template 1 
-Inspired by: [DarkCode youtube channel](https://www.youtube.com/channel/UCD3KVjbb7aq2OiOffuungzw "DarkCode youtube channel")
+<!-- Inspired by: [DarkCode youtube channel](https://www.youtube.com/channel/UCD3KVjbb7aq2OiOffuungzw "DarkCode youtube channel") -->
 
 ![fullLandingPageT1](./readmeImages/fullLandingPageT1.jpg "")
 
