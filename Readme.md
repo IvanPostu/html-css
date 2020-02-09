@@ -99,6 +99,9 @@
 
 - Full landing page template 1 
 
-
 ![fullLandingPageT1](./readmeImages/fullLandingPageT1.jpg "")
+
+- SideBar Menu 
+
+![SideBar Menu ](./readmeImages/sideBarMenu.jpg "")
 

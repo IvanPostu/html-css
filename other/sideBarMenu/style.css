@@ -1,0 +1,132 @@
+body,
+html {
+    background-color: rgb(6, 52, 133);
+    color: rgb(199, 207, 226);
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: 'Roboto', sans-serif;
+    min-width: 500px;
+
+    font-size: 17px;
+    line-height: 1.4;
+}
+
+a {
+    color: lightskyblue;
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+button,
+label {
+    font: 400 13.3333px Arial;
+}
+
+.sidebar {
+    position: fixed;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background: rgb(4, 110, 110);
+    transition: all .5s ease;
+}
+
+.sidebar header {
+    font-size: 22px;
+    color: wheat;
+    text-align: center;
+    line-height: 70px;
+    background: rgb(1, 24, 54);
+    user-select: none;
+}
+
+.sidebar ul a {
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 65px;
+    font-size: 20px;
+    color: wheat;
+    padding: 0 0 0 40px;
+    box-sizing: border-box;
+    border-bottom: 1px solid rgb(20, 20, 20);
+    transition: .4s;
+
+}
+
+
+ul li:hover a {
+    padding: 0 0 0 50px;
+}
+
+.sidebar ul a i {
+    margin: 0 16px 0 0;
+}
+
+#check {
+    display: none;
+}
+
+label #btn,
+label #cancel {
+    position: absolute;
+    cursor: pointer;
+    border-radius: 3px;
+    background: #042332;
+}
+
+label #btn {
+    left: 40px;
+    top: 25px;
+    font-size: 35px;
+    color: wheat;
+    padding: 6px 12px;
+    transition: .5s all;
+}
+
+label #cancel {
+    z-index: 1111;
+    left: -195px;
+    top: 17px;
+    font-size: 30px;
+    color: wheat;
+    padding: 4px 9px;
+    transition: .5s ease;
+}
+
+#check:checked~.sidebar {
+    left: 0;
+}
+
+#check:checked~label #btn {
+    left: 250px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+#check:checked~label #cancel {
+    left: 195px;
+}
+
+#check:checked~section {
+    margin-left: 250px;
+}
+
+section {
+    background: url(../../imgs/q6b.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    transition: all .5s;
+}
