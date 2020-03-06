@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    background: rgb(34, 34, 42);
+    /* color: white; */
+    font-family: Arial;
+    min-width: 400px;
+}
+
+.contactSection {
+    background: url(../../imgs/q5.jpg) no-repeat center;
+    background-size: cover;
+    padding: 40px 0;
+}
+
+.contactSection h1 {
+    text-align: center;
+    color: #ddd;
+}
+
+.border {
+    width: 100px;
+    height: 10px;
+    background: rgb(61, 89, 167);
+    margin: 40px auto;
+}
+
+.contactForm {
+    max-width: 600px;
+    margin: auto;
+    padding: 0 10px;
+    overflow: hidden;
+}
+
+.contactFormText {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 16px 0;
+    border: 0;
+    background: #111;
+    padding: 20px 40px;
+    color: #ddd;
+    outline: none;
+    transition: .5s;
+}
+
+.contactFormText:focus {
+    box-shadow: 0 0 10px 4px #34495e;
+}
+
+textarea.contactFormText {
+    height: 120px;
+    resize: none;
+}
+
+.contactFormBtn {
+    float: right;
+    border: 0;
+    background: #34495e;
+    color: #fff;
+    padding: 12px 50px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.contactFormBtn:hover {
+    background: #1761ac;
+}
