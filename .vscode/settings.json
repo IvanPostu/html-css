@@ -1,25 +1,27 @@
 {
-  // "path-intellisense.extensionOnImport": true,
-  // "path-autocomplete.extensionOnImport": true,
   "breadcrumbs.enabled": true,
   "debug.toolBarLocation": "floating",
-  "editor.autoIndent": true,
   "editor.codeLens": false,
   "editor.cursorBlinking": "smooth",
   "editor.cursorStyle": "line",
-  "editor.fontSize": 14,
+  "editor.fontSize": 13,
   "editor.fontFamily": "Consolas, 'Courier New', monospace",
   "editor.fontLigatures": true,
   "editor.formatOnPaste": true,
   "editor.formatOnType": false,
-  "editor.formatOnSave": true,
   "editor.letterSpacing": 0.2,
   "editor.lineHeight": 17,
   "editor.minimap.enabled": false,
-  // "files.autoSave": "afterDelay",
-  // "files.autoSaveDelay": 1100,
+  "editor.tabSize": 2,
+  "editor.detectIndentation": false,
+  "editor.insertSpaces": true,
   "search.showLineNumbers": true,
-  "workbench.colorCustomizations": {},
+  "workbench.colorCustomizations": {
+    "editorWarning.foreground": "#ff9100",
+    "editorError.foreground": "#ff0000",
+    // "editorWarning.border": "#d9ff00",
+    "editorError.border": "#b80000"
+  },
   "zenMode.centerLayout": false,
   "zenMode.hideLineNumbers": false,
   "editor.tokenColorCustomizations": {
@@ -27,21 +29,18 @@
       {
         "scope": "comment",
         "settings": {
-          "fontStyle": "italic",
           "foreground": "#7a9179",
         }
       },
       {
         "scope": "string.quoted.single",
         "settings": {
-          "fontStyle": "italic",
           "foreground": "#28ad75",
         }
       },
       {
         "scope": "string.quoted.double",
         "settings": {
-          "fontStyle": "italic",
           "foreground": "#64d131",
         }
       },
@@ -49,5 +48,11 @@
   },
   "files.exclude": {
     "node_modules/": true,
-  }
+    // "dist/": true
+  },
+  "editor.codeActionsOnSave": {
+    // "source.fixAll.eslint": true
+  },
+  "editor.formatOnSave": true,
 }
+© 2020 GitHub, Inc.
