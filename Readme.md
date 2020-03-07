@@ -66,11 +66,6 @@
 
 ## Examples of simple dropdown menus
 
-- Dropdown template 1
-
-![ddowntemplate1](./readmeImages/dropdownT1.jpg "")
-
-
 - ResponsiveNavMenuBar
 
 
